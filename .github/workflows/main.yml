@@ -46,7 +46,7 @@ jobs:
         working-directory: MicroserviceConfig
         
       - name: Build image eureka
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mes:Eureka .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mes:eureka .
         working-directory: MicroServiceEureka
 
       - name: Build image worker
